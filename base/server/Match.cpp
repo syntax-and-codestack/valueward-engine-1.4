@@ -16,3 +16,9 @@ Server::CServerPlayerNode * DisconnectNode(){
     g_nPlayerId--;
     g_pNode()->Player().DisconnectPlayer();
 };
+
+Match * MatchPrint_Message(Server::ServerSocket * socket){
+    MatchPrint_Message(socket)->GameMatch().GameMatch_Message(socket, "Match Lobby: %5.2c");
+    return MatchPrint_Message(socket);
+};
+

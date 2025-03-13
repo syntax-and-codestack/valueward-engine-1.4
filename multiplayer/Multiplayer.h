@@ -1,0 +1,1 @@
+bool NetworkSynced_DBCloud_WarFalls;
